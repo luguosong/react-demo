@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Card} from "antd";
 
+// 创建组件
 class MyButton extends Component {
     render() {
         return (
@@ -9,6 +10,7 @@ class MyButton extends Component {
     }
 }
 
+// 使用组件
 class CCom extends Component {
     render() {
         return (
