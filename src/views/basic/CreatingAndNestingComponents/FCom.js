@@ -1,11 +1,11 @@
 
-import {Card} from "antd";
+import {Button, Card} from "antd";
 
 //创建组件
 function MyButton() {
     return (
         <div>
-            <button>子组件按钮</button>
+            <Button>子组件按钮</Button>
         </div>
     );
 }

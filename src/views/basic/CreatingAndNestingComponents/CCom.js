@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import {Card} from "antd";
+import {Button, Card} from "antd";
 
 // 创建组件
 class MyButton extends Component {
     render() {
         return (
-            <button>子组件按钮</button>
+            <Button>子组件按钮</Button>
         );
     }
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Alert} from "antd";
 
 class CCom extends Component {
 
@@ -11,12 +12,10 @@ class CCom extends Component {
     render() {
         return (
             <div>
-                <ul>
-                    {
-                        this.state.list.map(item =>
-                            <li key={item.id}>{item.name}</li>)
-                    }
-                </ul>
+                {
+                    this.state.list.map(item =>
+                        <Alert key={item.id} message={item.name}/>)
+                }
             </div>
         );
     }
