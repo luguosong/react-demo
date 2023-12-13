@@ -69,6 +69,14 @@ function SiderMenu(props) {
                 {key: "preserving-and-resetting-state", label: "状态保留和重置"},
                 {key: "extracting-state-logic-into-a-reducer", label: "Reducer"},
                 {key: "passing-data-deeply-with-context", label: "Context"},
+                {key: "scaling-up-with-reducer-and-context", label: "Context+Reducer"},
+            ]
+        },
+        {
+            label: "应急方案",
+            key:"escape-hatches",
+            children: [
+                {key: "referencing-values-with-refs", label: "ref"},
             ]
         }
     ]

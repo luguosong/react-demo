@@ -3,7 +3,7 @@ import React, {createContext, useContext, useState} from 'react';
 import {Button, Card} from "antd";
 
 // 1️⃣创建 context
-const context = createContext(0);
+const Context = createContext(0);
 
 function FCom(props) {
 
@@ -12,11 +12,11 @@ function FCom(props) {
     return (
         <div>
             {/*3️⃣提供 context*/}
-            <context.Provider value={count}>
+            <Context.Provider value={count}>
                 <Button onClick={() => setCount(count + 1)}>+1</Button>
                 <p>{count}</p>
                 <Child1/>
-            </context.Provider>
+            </Context.Provider>
         </div>
     );
 }
@@ -31,7 +31,7 @@ function Child1() {
 
 function Child2() {
     // 2️⃣使用 Context
-    const count = useContext(context)
+    const count = useContext(Context)
 
     return (
         <Card title={"子组件2"}>

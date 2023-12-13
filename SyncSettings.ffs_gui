@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="GUI" XmlFormat="23">
+    <Notes/>
+    <Compare>
+        <Variant>Content</Variant>
+        <Symlinks>Exclude</Symlinks>
+        <IgnoreTimeShift/>
+    </Compare>
+    <Synchronize>
+        <Differences LeftOnly="right" LeftNewer="right" RightNewer="right" RightOnly="none"/>
+        <DeletionPolicy>RecycleBin</DeletionPolicy>
+        <VersioningFolder Style="Replace"/>
+    </Synchronize>
+    <Filter>
+        <Include>
+            <Item>*</Item>
+        </Include>
+        <Exclude>
+            <Item>.git</Item>
+            <Item>.idea</Item>
+            <Item>node_modules</Item>
+            <Item>SyncSettings.ffs_gui</Item>
+            <Item>README.md</Item>
+            <Item>package-lock.json</Item>
+            <Item>.gitignore</Item>
+            <Item>build</Item>
+        </Exclude>
+        <SizeMin Unit="None">0</SizeMin>
+        <SizeMax Unit="None">0</SizeMax>
+        <TimeSpan Type="None">0</TimeSpan>
+    </Filter>
+    <FolderPairs>
+        <Pair>
+            <Left>E:\IdeaCode\note\react-demo</Left>
+            <Right>E:\IdeaCode\note\programming-study\_front_end\05_react</Right>
+        </Pair>
+    </FolderPairs>
+    <Errors Ignore="false" Retry="0" Delay="5"/>
+    <PostSyncCommand Condition="Completion"/>
+    <LogFolder/>
+    <EmailNotification Condition="Always"/>
+    <GridViewType>Difference</GridViewType>
+</FreeFileSync>

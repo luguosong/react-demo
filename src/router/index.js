@@ -39,6 +39,8 @@ import SharingStateBetweenComponents from "../views/managing-state/sharing-state
 import PreservingAndResettingState from "../views/managing-state/preserving-and-resetting-state";
 import ExtractingStateLogicIntoAReducer from "../views/managing-state/extracting-state-logic-into-a-reducer";
 import PassingDataDeeplyWithContext from "../views/managing-state/passing-data-deeply-with-context";
+import ScalingUpWithReducerAndContext from "../views/managing-state/scaling-up-with-reducer-and-context";
+import ReferencingValuesWithRefs from "../views/escape-hatches/referencing-values-with-refs";
 
 
 function NotFound() {
@@ -118,6 +120,11 @@ export default function MainRouter(props) {
                         <Route path={"extracting-state-logic-into-a-reducer"}
                                element={<ExtractingStateLogicIntoAReducer/>}/>
                         <Route path={"passing-data-deeply-with-context"} element={<PassingDataDeeplyWithContext/>}/>
+                        <Route path={"scaling-up-with-reducer-and-context"} element={<ScalingUpWithReducerAndContext/>}/>
+                    </Route>
+
+                    <Route path={"escape-hatches"}>
+                        <Route path={"referencing-values-with-refs"} element={<ReferencingValuesWithRefs/>}/>
                     </Route>
 
                     <Route path='*' element={<NotFound/>}/>
